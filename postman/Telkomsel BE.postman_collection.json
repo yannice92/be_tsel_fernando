@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "68f5c2a3-5683-49f0-a231-60fa6a237b19",
+		"name": "Telkomsel BE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullname\":\"asdas\",\n    \"msisdn\": 628212491170\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/customers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get total reward",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\" : 88\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/customers/reward",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"customers",
+						"reward"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get total referral Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\" : 89\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/customers/referral",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"customers",
+						"referral"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
